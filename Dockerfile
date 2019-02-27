@@ -5,11 +5,11 @@ ADD application.py /tmp/application.py
 COPY requirements.txt /usr/src/app/
 COPY ./aem-apps-file/* /usr/src/app/
 COPY ./aem-apps-file/Archive /usr/src/app/Archive
-RUN python3 /usr/src/app/__push-publisher.py
-RUN ls -l /usr/src/app
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 RUN apt-get update
-RUN yes | apt-get install zip unzip 
+RUN yes | apt-get install zip unzip
+RUN python3 /usr/src/app/__push-publisher.py
+
 EXPOSE 5000
 
 # Run it
