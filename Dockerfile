@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 RUN apt-get update
 RUN yes | apt-get install zip unzip
 
-EXPOSE 5000
+EXPOSE 8000
 
 # Run it
 ENTRYPOINT ["python", "/tmp/application.py"]
