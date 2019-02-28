@@ -6,7 +6,7 @@ def push(ip, port, key):
     subprocess.call(command, shell=True)
 
 if __name__ == "__main__":
-
+    print("AICI2")
     #ip = input("Insert the publisher ip:")
     #port = input("Insert the publisher port:")
     #key = getpass.getpass('Enter the key:')
