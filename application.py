@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     #return redirect("http://35.183.247.189:4503/content/we-retail/us/en.html", code=302)
-    print("DA")
+    return redirect("www.google.com", code=302)
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     ip = '35.183.247.189'
