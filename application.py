@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return redirect("http://35.183.247.189:4503/content/we-retail/us/en.html", code=302)
+    return redirect("https://www.google.ro", code=302)
 
 
 if __name__ == '__main__':
