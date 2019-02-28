@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <community/>
+    <jcr:content
+        cq:allowedTemplates="[/conf/we-retail/settings/wcm/templates/.*]"
+        cq:designPath="/etc/designs/we-retail"
+        cq:lastModified="{Date}2016-02-09T00:05:48.520+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-02-26T12:41:33.781Z"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="We.Retail"
+        jcr:uuid="aa9b2334-93cf-4239-b885-466a69ec99e6"
+        sling:redirect="true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="foundation/components/redirect"
+        redirectTarget="/content/we-retail/us/en">
+        <image
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
+            <file/>
+        </image>
+    </jcr:content>
+    <language-masters/>
+    <us/>
+</jcr:root>

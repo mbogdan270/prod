@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Content-Package-Roots: /content/campaigns/we-retail,/content/catalogs/
+ we-retail/en/website-catalog,/content/we-retail,/etc/community/we-ret
+ ail,/content/dam/collections/w/we-retail,/content/catalogs/we-retail/
+ en/website-template-pages,/conf/we-retail,/apps/we-retail/components,
+ /content/we-retail/community
+Content-Package-Type: mixed
+Content-Package-Id: adobe/aem6/sample:we.retail.ui.content:1.0.0
+Content-Package-Description: UI content package for We.Retail
+
