@@ -15,6 +15,6 @@ if __name__ == '__main__':
     port = '4503'
     key = 'xvfT9T4FRCWV=W@v?=+Q}GHL'
     command = "/usr/src/app/push_publisher.sh " + 'http://' + ip + ':' + port + '/crx/packmgr/service.jsp' + ' ' + key
-    subprocess.call(command, shell=True)
+    #subprocess.call(command, shell=True)
     port = int(os.environ.get('PORT', 8000))
     app.run(host='0.0.0.0', port=port)
