@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
 
-    return redirect("lasttop.adobecemcloud.net/home", code=302)
+    return redirect("http://lasttop.adobecemcloud.net/home", code=302)
 
 
 if __name__ == '__main__':
