@@ -3,7 +3,7 @@ import os
 from flask import request
 from flask import jsonify
 import subprocess
-import requests
+
 import re
 import sys
 import unicodedata
