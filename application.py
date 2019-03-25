@@ -3,9 +3,9 @@ import os
 from flask import request
 from flask import jsonify
 import subprocess
-import requests
 import re
 import sys
+import requests
 import unicodedata
 import string
 import time
@@ -48,7 +48,7 @@ def check(i):
     data = [('ip', i),]
     g=requests.post('http://www.ipvoid.com/ip-blacklist-check/', headers=headers, cookies=cookies, data=data)
     string1 = unicodedata.normalize('NFKD', g.text).encode('ascii','ignore')
-    r = string1.translate(string1.maketrans("\n\t\r", "   "))
+    r = string1.translate(string.maketrans("\n\t\r", "   "))
     final_string = str(re.findall(r'BLACKLISTED \d+\/\d+',str(r)))
     if("BLACKLISTED" in final_string):
         return 1
@@ -74,7 +74,6 @@ def hello():
     check_ddos(request.remote_addr)
     print(numberofrequests[request.remote_addr])
     if var == 1:
-        print ("AICI")
         return "forbidden"
     else:
         return redirect("http://lasttop.adobecemcloud.net/home", code=302)
