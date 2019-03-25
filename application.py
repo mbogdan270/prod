@@ -3,7 +3,7 @@ import os
 from flask import request
 from flask import jsonify
 import subprocess
-
+import requests
 import re
 import sys
 import unicodedata
@@ -74,6 +74,7 @@ def hello():
     check_ddos(request.remote_addr)
     print(numberofrequests[request.remote_addr])
     if var == 1:
+        print ("AICI")
         return "forbidden"
     else:
         return redirect("http://lasttop.adobecemcloud.net/home", code=302)
