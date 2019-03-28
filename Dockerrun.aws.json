@@ -1,7 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
-  "Logging": "/tmp/sample-app",
   "Image": {
-  	"Update": "false"
-  }
+    "Name": "mbogdan270/ci-cd:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "5000"
+    }
+  ]
 }
