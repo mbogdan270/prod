@@ -1,12 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "mbogdan270/ci-cd:latest",
+    "Name": "mbogdan270/ci-cd",
     "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "5000"
+      "ContainerPort": "4503"
     }
   ]
-}
+}'|jq -c '.Volumes[]?|[.HostDirectory,.ContainerDirectory]' 
