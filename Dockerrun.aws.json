@@ -9,4 +9,4 @@
       "ContainerPort": "4503"
     }
   ]
-}'|jq -c '.Volumes[]?|[.HostDirectory,.ContainerDirectory]' 
+}
